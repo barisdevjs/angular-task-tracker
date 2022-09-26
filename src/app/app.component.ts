@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title:string = 'angular-template';
+  public readonly title: string = 'Just For Test File'
 }
  

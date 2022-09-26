@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Task } from '../Task'
 import { Observable} from 'rxjs'
 import { HttpClient, HttpHandler, HttpInterceptor, HttpRequest, HttpHeaders} from '@angular/common/http'
-
+import Swal from 'sweetalert2'
 
 const httpOptions = {
   headers : new HttpHeaders({
@@ -35,16 +35,34 @@ export class TaskService implements HttpInterceptor {
   }
 
   deleteTask(task: Task): Observable<Task>  {
+    Swal.fire({
+      title: 'Warning!',
+      text: 'This can not be undone',
+      icon: 'question',
+      confirmButtonText: 'Awww'
+    })
     const url = `${this.apiUrl}/${task.id}`
     return this.http.delete<Task>(url)
   }
 
   updateTaskReminder(task: Task): Observable<Task> {
     const url = `${this.apiUrl}/${task.id}`
+    Swal.fire({
+      title:'Status Updated',
+      text:'Awesome',
+      icon:'info',
+      width : '15vw',
+      heightAuto : false
+  })
     return this.http.put<Task>(url, task, httpOptions)
   }
 
   addTask(task: Task): Observable<Task> {
+    Swal.fire(
+      'Tasks Updated',
+      'Nice',
+      'success'
+    )
     return this.http.post<Task>(this.apiUrl, task, httpOptions)
   }
 

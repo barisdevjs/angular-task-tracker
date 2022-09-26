@@ -1,0 +1,31 @@
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height : 25vh;
+}
+
+
+a:first-of-type {
+    background-color: aqua;
+    align-self: start;
+}
+
+
+section {
+    align-self:flex-start;
+}
+
+h4 {
+    font-size:larger;
+}
+
+
+
+
+
+
+
+
+

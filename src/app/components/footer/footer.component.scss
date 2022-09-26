@@ -1,0 +1,21 @@
+footer {
+    margin-top: 10px;
+    text-align: center;
+    background-color:cadetblue;
+    transform:scaleX(.98);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a:first-of-type > img {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+a:last-of-type {
+    background-color:aqua;
+}
+
