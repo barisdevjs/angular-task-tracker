@@ -36,9 +36,9 @@ export class TaskService implements HttpInterceptor {
 
   deleteTask(task: Task): Observable<Task>  {
     Swal.fire({
-      title: 'Warning!',
-      text: 'This can not be undone',
-      icon: 'question',
+      title: 'This can not be undone',
+      text: 'It is too late',
+      icon: 'error',
       confirmButtonText: 'Awww'
     })
     const url = `${this.apiUrl}/${task.id}`
@@ -47,22 +47,15 @@ export class TaskService implements HttpInterceptor {
 
   updateTaskReminder(task: Task): Observable<Task> {
     const url = `${this.apiUrl}/${task.id}`
-    Swal.fire({
-      title:'Status Updated',
-      text:'Awesome',
-      icon:'info',
-      width : '15vw',
-      heightAuto : false
-  })
     return this.http.put<Task>(url, task, httpOptions)
   }
 
   addTask(task: Task): Observable<Task> {
-    Swal.fire(
-      'Tasks Updated',
-      'Nice',
-      'success'
-    )
+    Swal.fire({
+      title:'Task Added',
+      text:'Nice',
+      icon:'success',
+    })
     return this.http.post<Task>(this.apiUrl, task, httpOptions)
   }
 
