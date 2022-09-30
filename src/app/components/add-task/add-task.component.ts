@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Task } from '../../Task'
 import { UiService} from '../../services/ui.service';
 import { Subscription} from 'rxjs';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-add-task',
@@ -36,7 +37,11 @@ export class AddTaskComponent implements OnInit {
 
   onSubmit() {
     if (!this.text) {
-      alert('Please add a task')
+      Swal.fire({
+        title:'I won\'t let you do this',
+        text:'Don\'t forget to add a task',
+        icon:'warning',
+      })
       return;
     }
 

@@ -14,7 +14,7 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { TaskService } from './services/task.service';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AboutComponent } from './components/about/about.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component'
 
 
 const appRoutes: Routes = [
@@ -49,6 +49,6 @@ const appRoutes: Routes = [
     useClass: TaskService,
     multi: true
   }  ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] 
 })
 export class AppModule { }

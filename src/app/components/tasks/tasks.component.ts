@@ -28,6 +28,19 @@ export class TasksComponent implements OnInit {
 
   toggleReminder(task: Task) {
     task.reminder = !task.reminder
+    if ( task.reminder === false ) {
+      Swal.fire({
+        title:'Deactivated',
+        text:'I am not sure',
+        icon:'question',
+      })
+    } else {
+      Swal.fire({
+        title:'Activated',
+        text:'Go for it',
+        icon:'info',
+      }) 
+    }
     this.taskService.updateTaskReminder(task).subscribe()
   }
 
