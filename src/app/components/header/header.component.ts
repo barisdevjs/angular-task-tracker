@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
   title: string = 'Task Tracker'
   showAddTask : boolean = false;
-  private readonly subscription = new Subscription
+  public readonly subscription = new Subscription
 
   constructor( private uiService: UiService, private router: Router) { 
     this.subscription = this.uiService.onToggle()

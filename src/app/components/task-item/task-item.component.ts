@@ -7,8 +7,7 @@ import { Task } from '../../Task'
   styleUrls: ['./task-item.component.scss']
 })
 export class TaskItemComponent implements OnInit {
-
-
+  
   @Input() task: Task = { id : 33 , text: '',day:'',reminder:true}
   @Output() onDeleteTask : EventEmitter<Task> = new EventEmitter
   @Output() onToggleReminder : EventEmitter<Task> = new EventEmitter
