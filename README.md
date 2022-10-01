@@ -8,9 +8,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically opened
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Technologies 
+
+#### Routing
+#### Http Features
+#### Observable , Subject
+#### HTTP_INTERCEPTORS
+#### get,delete,post,put methods
+#### Fake JSON local server
+#### Sweetalert2
+
 
 ## Build
 
@@ -24,6 +32,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ![alt text](https://github.com/barisdevjs/angular-task-tracker/blob/main/src/assets/2.jpg)
 
 ![alt text](https://github.com/barisdevjs/angular-task-tracker/blob/main/src/assets/3.jpg)
+
+
 
 
 
