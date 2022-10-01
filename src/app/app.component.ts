@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public readonly title: string = 'Just For Test File'
+  public readonly title: string = 'Task Tracker'
 }
  
