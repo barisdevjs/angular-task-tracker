@@ -1,5 +1,4 @@
 footer {
-    margin-top: 10px;
     text-align: center;
     background-color:cadetblue;
     transform:scaleX(.98);
@@ -7,7 +6,12 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    bottom:0px;
+    width: 50%;
+    margin-inline:auto ;
 }
+
 
 a:first-of-type > img {
     display: inline-block;

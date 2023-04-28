@@ -1,3 +1,13 @@
 body {
     background-color: yellow;
 }
+
+.container {
+    position: relative;
+}
+
+.footer_style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
