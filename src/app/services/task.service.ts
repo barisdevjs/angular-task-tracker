@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Task } from '../Task'
-import { Observable} from 'rxjs'
+import { Observable } from 'rxjs'
 import { HttpClient, HttpHandler, HttpInterceptor, HttpRequest, HttpHeaders} from '@angular/common/http'
 import Swal from 'sweetalert2'
 
 const httpOptions = {
   headers : new HttpHeaders({
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
   })
 }
 
