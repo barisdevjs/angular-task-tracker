@@ -8,12 +8,13 @@ import Swal from 'sweetalert2'
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  year : string = "2023"
 
   constructor(private router: Router) { }
 
 
   ngOnInit(): void {
-
+    this.year = new Date().getFullYear().toString();
   }
 
   hasRoute( route : string ): boolean {
